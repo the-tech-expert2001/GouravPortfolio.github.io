@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfilio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <div class="nav">
+      <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icon">
+          <button class="bars" id="bars" onclick="show()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+          <div class="cancle" id="cancle" onclick="hide()">&times;</div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- home section design -->
+
+    <section id="home" class="home">
+      <div class="profile">
+        <div class="profile-details">
+          <h3 class="heading">Hy I'm</h3>
+          <h1 class="heading">GOURAV SANCHETI</h1>
+          <p>
+            I am an experienced WordPress and web developer proficient in
+            creating dynamic and user-friendly websites. I specialize in
+            front-end and back-end development, ensuring responsive designs and
+            seamless functionality to meet clients' needs.
+          </p>
+          <div class="social-media-links">
+            <div class="facebook links">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="twitter links">
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="instagram links">
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="facebook links">
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <button class="cv capital">download cv</button>
+        </div>
+        <div class="profile-img">
+          <div class="overlay"></div>
+          <img class="overlay-1" src="images\border2.png" alt="" />
+          <!-- <svg class="line" height="900" width="900" background="black">
+  <line x1="0" y1="0" x2="340" y2="340" style="stroke:rgb(255,0,0);stroke-width:10" />
+  <line x1="310" y1="310" x2="0" y2="620" style="stroke:rgb(255,0,0);stroke-width:10" />
+
+  Sorry, your browser does not support inline SVG.
+</svg> -->
+          <img src="images/home.png" alt="img" />
+          <div class="professions-box">
+            <div class="profession" style="--i: 1">
+              Website <br />
+              Developer
+            </div>
+            <div class="profession" style="--i: 2">
+              Graphics <br />
+              Designer
+            </div>
+            <div class="profession" style="--i: 3">
+              SEO <br />
+              Developer
+            </div>
+            <div class="profession" style="--i: 4">
+              UI & UX <br />
+              Designer
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section id="about-section" class="about">
+      <div class="about-img">
+        <img src="images\about.png" alt="my image" />
+      </div>
+      <div class="about-content">
+        <h1 class="heading">About <span>Me</span></h1>
+        <h4 class="heading">hi ,i am a Web Developer</h4>
+        <p>
+          I'm a dedicated web developer, blending creativity with technical
+          expertise to craft engaging online experiences. Proficient in HTML,
+          CSS, JavaScript, and more, I strive to build user-friendly, responsive
+          websites. With a passion for innovation and problem-solving, I'm
+          committed to delivering projects that exceed expectations and leave a
+          lasting impact.Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Rem, facilis? Voluptas dolores dolor harum laborum, doloremque
+          tempore similique velit laboriosam expedita pariatur aliquam, ea
+          voluptates enim blanditiis, in iure! Eos!
+        </p>
+        <button class="capital hoverbtn">read more</button>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section id="service">
+      <h1 class="heading">My <span>Services</span></h1>
+      <div class="service-container">
+        <div class="service-box">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3 class="heading">Wordpress Developer</h3>
+          <p>
+            WordPress developer with expertise in custom themes, plugins, and
+            optimization, creating seamless, user-friendly websites tailored to
+            clients' needs.
+          </p>
+          <a href="#" class="capital hoverbtn">read more</a>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3 class="heading">UI & UX Developer</h3>
+          <p>
+            I design user-friendly interfaces, merging aesthetics and
+            functionality, delivering captivating digital experiences with a
+            focus on UX.
+          </p>
+          <a href="#" class="capital hoverbtn">read more</a>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3 class="heading">Web Developer</h3>
+          <p>
+            I create responsive websites, coding and designing for optimal user
+            experiences, ensuring functionality and visual appeal.
+          </p>
+          <a href="#" class="capital hoverbtn">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+
+    <section id="portfolio" class="portfolio">
+      <h1 class="heading">My <span>portfolio</span></h1>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/krinjal.PNG" alt="img1" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://krinjalleatherexport.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\kansara.PNG" alt="img2" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://kansarainternational.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\bluecity.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://bluecityoverseas.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\prajakta.PNG" alt="img1" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Prajakta Fashion Leaders</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://prajaktafashionleather.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\rm-enter.PNG" alt="img2" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">RM -Enterprises</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://rm-enterprises.in/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\jainmonk.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Jainmonk Overseas</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://jainmonkoverseas.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\furnship.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://furnship.co.in/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\heavenly.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://heavenlyhandmade.co.in/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\jaibhairav.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://jaibhairavartandcraft.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\shreekrishna.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://shreekrishnainnovation.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\aceof.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p>
+            <a href="#" class="capital hoverbtn">read more</a> -->
+            <center>
+              <a
+                href="https://aceofcrafters.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images\shreekrishnaindustry.PNG" alt="img3" />
+          <div class="portfolio-content">
+            <!-- <h3 class="heading">Web Design</h3> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              vel, exercitationem earum quas delectus provident voluptatem
+              laborum ducimus
+            </p> -->
+            <center>
+              <a
+                href="https://shreekrishnaindustry.com/"
+                target="_blank"
+                class="capital hoverbtn"
+                >Visit</a
+              >
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial design -->
+
+    <section id="testimonials">
+      <h1 class="heading">Testimonials from  <span>Satsified Clients</span></h1>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <center>
+              <img src="images\testimonial1.jpg" alt="Customer Image" />
+            </center>
+            <div class="testimonial-content">
+              <h3>John Smith</h3>
+              <p>Customer</p>
+              <p>
+                This developer consistently delivered exceptional results,
+                showcasing a deep understanding of coding and problem-solving.
+                Their dedication, attention to detail, and ability to meet
+                deadlines made them an invaluable asset to our team. I highly
+                recommend their expertise for any software development project.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\testimonial3.jpg" alt="Customer Image" />
+            <div class="testimonial-content">
+              <h3>Jane Doe</h3>
+              <p>Client</p>
+              <p>
+                Our experience with this web developer was fantastic. They
+                created a user-friendly, visually stunning website that exceeded
+                our expectations. Their communication, professionalism, and
+                commitment to delivering on time made the project a breeze.
+                We're thrilled with the results and highly recommend their
+                services for web development needs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images\testimonial2.jpg" alt="Customer Image" />
+            <div class="testimonial-content">
+              <h3>Michael Johnson</h3>
+              <p>User</p>
+              <p>
+                I had a fantastic experience with this web developer. The
+                website they designed is intuitive, fast, and visually
+                appealing. It's easy to navigate, and I love the attention to
+                detail. They've improved my online experience significantly, and
+                I'd recommend them to anyone seeking a top-notch web developer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+
+    <section class="container contact" id="contact">
+      <h1 class="heading">Get In  <span> Touch</span></h1>
+
+      <div class="contact-box">
+        <div class="contact-left">
+          <form action="">
+            <div class="input-row">
+              <div class="input-group">
+                <label>NAME :</label>
+                <input
+                  type="text"
+                  placeholder="YOUR NAME"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="input-group">
+                <label>LAST NAME :</label>
+                <input
+                  type="text"
+                  placeholder="LAST NAME"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label>EMAIL :</label>
+                <input
+                  type="email"
+                  placeholder="YOUR EMAIL"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="input-group">
+                <label>PHONE NUMBER :</label>
+                <input
+                  type="tel"
+                  placeholder="YOUR NUMBER"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <label>MESSAGE :</label>
+            <textarea rows="5" placeholder=" YOUR MESSAGE"></textarea>
+
+            <button type="submit" class="capital hoverbtn">SUBMIT</button>
+          </form>
+        </div>
+        <div class="contact-right">
+          <span>HOW TO REACH US</span>
+          <div>
+            <img src="images/c1.png" alt="img1" />
+          </div>
+          <ul type="none" class="details">
+            <li>EMAIL :- sanchetigourav2001@gmail.com</li>
+            <li>PHONE :- +91-9079694464</li>
+            <li>ADDRESS : goliyo ki pole kapda bazar , Jodhpur, Rajasthan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer design -->
+    <div class="footer">
+      <h3>Copyright © 2023 Portfolio ||</h3>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
